@@ -30,7 +30,7 @@ export class CourseListComponent implements OnInit {
         })
     }
 
-    deleteById(courseId:number): void{
+    deleteById(courseId: number): void {
         this.courseService.deleteById(courseId).subscribe({
             next: () => {
                 console.log('Deleted with Success');
